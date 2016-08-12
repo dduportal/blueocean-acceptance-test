@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=VNC Config
+Comment=
+Exec=vncconfig -iconic
+Icon=emblem-system
+Path=
+Terminal=false
+StartupNotify=false

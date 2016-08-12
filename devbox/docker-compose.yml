@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+
+  desktop:
+    # Uncomment here to go in local docker dev mode
+    #build: ./desktop/
+    image: dduportal/blueocean-acceptance-test
+    restart: unless-stopped
+    ports:
+      - "5900:5900"
+      - "9000:9000"
+    volumes:
+      - "/tmp"
+      # Uncomment to reuse your host maven cache
+      #- "~/.m2:/home/dev/.m2"
+      # Uncomment and adapt to reuse your host repositories
+      #- "~/workspace/blueocean-plugin:/home/dev/blueocean-plugin"
+      # - "~/jenkinsci/blueocean-acceptance-test:/home/dev/blueocean-acceptance-test"

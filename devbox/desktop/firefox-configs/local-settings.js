@@ -1,0 +1,3 @@
+// mozilla.cfg file must be at the root of firefox install dir...
+pref("general.config.filename", "mozilla.cfg");
+pref("general.config.obscure_value", 0);
